@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <video autoplay muted loop id="myVideo">
+      <source src="img/video.mp4" type="video/mp4" />
+    </video>
+    <div class="form" action="form">
+      <div class="maincontainer">
+        <h2>Temperature Converter</h2>
+        <br />
+        <div class="row1">
+          <input id="input" type="number" />
+          <select name="temp_option" id="temp_option">
+            <option value="Cel" name="Cel">Celsius</option>
+            <option value="Fah" name="Fah">Fahrenheit</option>
+          </select>
+          <button class="convert" onclick="converter()">convert</button>
+        </div>
+
+        <br />
+        <br />
+        <span>
+          <p id="ans"></p>
+        </span>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
